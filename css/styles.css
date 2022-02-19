@@ -110,7 +110,7 @@ ul {
 
 .hero {
   background: #2f303a;
-  max-width: 1600;
+  max-width: 1600px;
   height: 600px;
   top: 80px;
 }
@@ -124,6 +124,10 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-tetle-text);
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 /*кнопка заказать услугу*/
@@ -136,13 +140,18 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: block;
-  margin: auto;
   width: 200px;
   height: 50px;
-  letter-spacing: 0.06em;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
 /*секция особенности*/
 .title {
   color: var(--accent-color);
@@ -157,13 +166,9 @@ ul {
   display: flex;
 }
 
-.plan-list:last-child {
-  padding-left: 30px;
-}
-
 .plan-item {
   width: 270px;
-  margin-left: auto;
+  margin-right: 30px;
 }
 
 /*секция план*/
@@ -173,6 +178,23 @@ ul {
 }
 
 /*Чем мы занимаемся*/
+.container-list {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+  margin-right: -30px;
+}
+
+.about-item {
+  flex-basis: calc((100% - 3 * 60px) / 3);
+  margin-right: 30px;
+}
+
+.about-item:last-child {
+  margin-right: 0;
+}
 .about-title {
   color: var(--accent-color);
   font-size: 36px;
@@ -181,10 +203,51 @@ ul {
 }
 
 /*наша команда*/
+
+.container-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-section {
+  background: #f5f4fa;
+  max-width: 1600px;
+  height: 648px;
+}
+
+.team-list {
+  display: flex;
+  margin-right: -30px;
+}
+
+.team-caption-list {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  height: 368px;
+  margin-right: 30px;
+}
+
+.team-img {
+  display: flex;
+  flex-basis: calc((100% - 4 * 90px) / 4);
+  margin-right: 30px;
+}
+
+.team-caption {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  padding-top: 30px;
+  text-align: center;
 }
 
 /*наша команда текст*/
@@ -192,10 +255,15 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   color: var(--title-text-color);
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 /*футер*/
 .footer {
+  max-width: 1600px;
+  height: 252px;
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -205,7 +273,6 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  padding-left: 215px;
 }
 
 .footer-address {
@@ -220,10 +287,6 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-contacts {
-  padding-left: 215px;
 }
 
 /*страница портфолио*/
