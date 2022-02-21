@@ -173,6 +173,8 @@ ul {
 .plan-item {
   width: 270px;
   margin-right: 30px;
+font-size: 14px;
+line-height: 1.7;
 }
 
 .plan-item:last-child{
@@ -185,6 +187,7 @@ ul {
 .upper-title {
   font-size: 14px;
   line-height: 1.71;
+
 }
 
 /*Чем мы занимаемся*/
@@ -463,6 +466,8 @@ margin-right: 8px;
   line-height: 1.8;
   
 }
+
+
 
 .list-title-subject{
  padding: 20px 24px;
