@@ -20,6 +20,7 @@ h3,
 h4,
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
@@ -28,6 +29,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 
 .container {
   width: 1200px;
@@ -89,12 +91,13 @@ ul {
 
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
+  
 }
 
 /*контакты хедер*/
 .contacts-link{
    margin-right: 50px;
+   
 }
 
 .contacts-link:last-child {
@@ -111,6 +114,7 @@ ul {
 
 .contacts-phone,
 .contacts-mail {
+  display: block;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -222,14 +226,10 @@ line-height: 1.7;
 
 /*наша команда*/
 
-.container-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .team-section {
   background: #f5f4fa;
-  max-width: 1600px;
-  height: 648px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-list {
@@ -295,6 +295,8 @@ line-height: 1.7;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -302,7 +304,7 @@ line-height: 1.7;
   font-size: 14px;
   line-height: 1.71;
   color: var(--main-tetle-text);
- margin-top: 20px;
+ 
  margin-bottom: 9px;
 }
 
@@ -315,7 +317,11 @@ line-height: 1.7;
 
 .footer-contacts-mail:not(:last-child) {
 margin-bottom: 9px;
+
 }
+
+
+
 
 
 
@@ -498,4 +504,9 @@ margin-right: 8px;
 img {
   display: block;
   height: auto;
+}
+
+a{
+  color: var(--accent-color) ;
+  text-decoration: none;
 }
