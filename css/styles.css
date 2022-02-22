@@ -39,9 +39,7 @@ ul {
 
 .header {
   border-bottom: 1px solid #ececec;
-  max-width: 1600px;
 
-  top: 80px;
 }
 
 .header-container-nav {
@@ -91,13 +89,18 @@ ul {
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*контакты хедер*/
-
-.contacts-link {
-  margin-left: 50px;
+.contacts-link{
+   margin-right: 50px;
 }
+
+.contacts-link:last-child {
+ margin-right: 0;
+}
+
 
 .contacts-phone:hover,
 .contacts-phone:focus,
@@ -214,6 +217,7 @@ line-height: 1.7;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 /*наша команда*/
@@ -254,6 +258,7 @@ line-height: 1.7;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .team-title {
   font-weight: 500;
@@ -264,7 +269,7 @@ line-height: 1.7;
 }
 
 .team-captiom-title{
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -293,11 +298,12 @@ line-height: 1.7;
 }
 
 .footer-address {
-  font-weight: normal;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--main-tetle-text);
  margin-top: 20px;
+ margin-bottom: 9px;
 }
 
 .footer-phone,
@@ -307,9 +313,10 @@ line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-mail:last-child{
-  margin-bottom: 9px;
+.footer-contacts-mail:not(:last-child) {
+margin-bottom: 9px;
 }
+
 
 
 /*страница портфолио*/
@@ -375,6 +382,7 @@ a {
 .benefits {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
  
 }
 
@@ -432,21 +440,22 @@ margin-right: 8px;
 /* заголовок */
 
 .list {
-  margin-top: 50px;
-  display: flex;
+ display: flex;
+ flex-wrap: wrap;
+  margin-top: -30px;
   margin-right: -30px;
-  flex-wrap: wrap;
+
+ 
 }
 
 .list-title {
-  flex-basis: calc((100% - 9 * 270px) / 9);
+  
+  flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
   background: #ffffff;
   box-sizing: border-box;
-   border-left: 1px solid #EEEEEE;
- border-right: 1px solid #EEEEEE;
- border-bottom: 1px solid #EEEEEE;
+ 
 }
 
 .subject {
@@ -471,8 +480,10 @@ margin-right: 8px;
 
 .list-title-subject{
  padding: 20px 24px;
-
  margin: 0;
+ border-left: 1px;
+ border-right: 1px;
+ border-bottom: 1px;
 }
 
 .footer-address {
